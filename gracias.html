@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracias — Adolescencias Conscientes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --oliva-bg: #6b7c5c;
+      --oliva-light: #b5c4a0;
+      --salvia-dark: #5e8a74;
+      --cream: #faf8f4;
+      --beige-light: #f4efe7;
+      --beige-dark: #cfc3b0;
+      --carbon: #2e2e2b;
+      --carbon-mid: #4a4a46;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--carbon);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--beige-dark);
+      border-radius: 22px;
+      padding: 4rem 3.5rem;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+    }
+    .icon {
+      width: 64px;
+      height: 64px;
+      background: var(--oliva-bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      font-size: 1.75rem;
+    }
+    .title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: var(--carbon);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .subtitle {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--salvia-dark);
+      margin-bottom: 1.5rem;
+    }
+    .text {
+      font-size: 0.95rem;
+      color: var(--carbon-mid);
+      font-weight: 300;
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+    }
+    .firma {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--salvia-dark);
+      margin-bottom: 2.5rem;
+    }
+    .btn-volver {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--oliva-bg);
+      color: white;
+      padding: 0.75rem 2rem;
+      border-radius: 100px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .btn-volver:hover { background: var(--salvia-dark); }
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--beige-dark);
+      margin: 0 auto 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🌿</div>
+    <h1 class="title">¡Gracias por tu consulta!</h1>
+    <div class="divider"></div>
+    <p class="subtitle">Tu mensaje llegó correctamente.</p>
+    <p class="text">
+      Nos pondremos en contacto con vos a la brevedad para responder tu consulta.<br>
+      Si necesitás una respuesta urgente, también podés escribirnos por Instagram.
+    </p>
+    <p class="firma">— Adolescencias Conscientes</p>
+    <a href="/" class="btn-volver">Volver al inicio</a>
+  </div>
+</body>
+</html>
