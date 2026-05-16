@@ -720,6 +720,30 @@
 </footer>
 
 <script>
+  // ── SLIDER ──
+  var sliderIndexes = {};
+
+  // Soporte táctil (swipe)
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.charla-slider').forEach(function(slider) {
+      var id = slider.id.replace('slider-', '');
+      var startX = 0;
+      slider.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+      }, { passive: true });
+      slider.addEventListener('touchend', function(e) {
+        var diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) slide(id, diff > 0 ? 1 : -1);
+      }, { passive: true });
+    });
+    // Inicializar todos los sliders
+    document.querySelectorAll('.slider-track').forEach(function(track) {
+      var id = track.id.replace('track-', '');
+      sliderIndexes[id] = 0;
+      updateSlider(id);
+    });
+  });
+
   var form = document.getElementById('contactoForm');
   if (form) {
     form.addEventListener('submit', function(e) {
